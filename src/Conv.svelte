@@ -74,7 +74,7 @@
       console.log(outputImageElement, JSON.stringify(kernelArray));
       (async () => {
         const rawResponse = await fetch(
-          "http://localhost:5001/api/convolution",
+          "http://159.223.126.72/api/convolution",
           {
             method: "POST",
             // mode: "no-cors",
@@ -109,7 +109,7 @@
       formData.append("input_image", inputFile);
       console.log(outputImageElement, inputFile);
       (async () => {
-        const rawResponse = await fetch("http://localhost:5001/api/fourier", {
+        const rawResponse = await fetch("http://159.223.126.72/api/fourier", {
           method: "POST",
           // mode: "no-cors",
           headers: {
@@ -147,7 +147,7 @@
         console.log("value", value);
       });
       (async () => {
-        const rawResponse = await fetch("http://localhost:5001/api/noise", {
+        const rawResponse = await fetch("http://159.223.126.72/api/noise", {
           method: "POST",
           // mode: "no-cors",
           headers: {
@@ -188,7 +188,7 @@
       });
       (async () => {
         const rawResponse = await fetch(
-          "http://localhost:5001/api/interpolation",
+          "http://159.223.126.72/api/interpolation",
           {
             method: "POST",
             // mode: "no-cors",
