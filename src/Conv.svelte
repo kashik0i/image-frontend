@@ -74,7 +74,7 @@
       console.log(outputImageElement, JSON.stringify(kernelArray));
       (async () => {
         const rawResponse = await fetch(
-          "https://159.223.126.72/api/convolution",
+          "https://api.badawy.dev/api/convolution",
           {
             method: "POST",
             // mode: "no-cors",
@@ -109,7 +109,7 @@
       formData.append("input_image", inputFile);
       console.log(outputImageElement, inputFile);
       (async () => {
-        const rawResponse = await fetch("https://159.223.126.72/api/fourier", {
+        const rawResponse = await fetch("https://api.badawy.dev/api/fourier", {
           method: "POST",
           // mode: "no-cors",
           headers: {
@@ -147,7 +147,7 @@
         console.log("value", value);
       });
       (async () => {
-        const rawResponse = await fetch("https://159.223.126.72/api/noise", {
+        const rawResponse = await fetch("https://api.badawy.dev/api/noise", {
           method: "POST",
           // mode: "no-cors",
           headers: {
@@ -188,7 +188,7 @@
       });
       (async () => {
         const rawResponse = await fetch(
-          "https://159.223.126.72/api/interpolation",
+          "https://api.badawy.dev/api/interpolation",
           {
             method: "POST",
             // mode: "no-cors",
